@@ -1,21 +1,11 @@
 # garbage-time-web
 
-Landing hub for garbage-time mini applications.
+Static landing page for garbage-time mini apps.
 
-Built with Next.js, TypeScript, and Tailwind CSS.
+## files
 
-## dev
+- `index.html` — main page
+- `styles.css` — all styling
+- `public/` — images, fonts
 
-```bash
-npm install
-npm run dev
-```
-
-Opens at `http://localhost:3000`
-
-## structure
-
-- `src/app/` — Next.js app router pages and layouts
-- `src/components/` — React components
-- `src/lib/` — utilities and content
-- `public/` — static assets (images, fonts)
+No build step needed. Just serve the folder.
