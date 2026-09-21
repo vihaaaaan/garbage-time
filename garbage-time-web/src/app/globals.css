@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* Header band. Dumpster green, so the orange ball in the logo pops. */
+  --band: #9ad14b;
+}
+
+/* Apply the pixel display face. Falls back to the body sans until the
+   web font loads. Geist Pixel only reads as pixelated at large sizes, so use
+   it on big display text (logo, headings), not small copy. It ships one
+   weight, so don't pair it with font-bold (the browser fakes it badly). */
+.font-pixel {
+  font-family: var(--font-geist-pixel), var(--font-plex-sans), sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-band: var(--band);
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plex-sans), system-ui, sans-serif;
+  text-transform: lowercase;
+}
