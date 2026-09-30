@@ -4,20 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>garbage time</title>
+  <meta name="description" content="basketball and sports projects by vihaan.">
   <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>garbage time</h1>
-      <p>basketball and sports projects.</p>
-    </header>
-
-    <main>
-      <div class="projects">
-        <!-- Mini apps go here -->
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand-copy">
+        <h1><a href="/">garbage time</a></h1>
+        <p>by vihaan</p>
       </div>
-    </main>
-  </div>
+      <img
+        class="brand-logo"
+        src="public/logo.png"
+        alt="garbage time logo, a pixel basketball in a trash can"
+        width="189"
+        height="256"
+      >
+    </div>
+  </header>
+
+  <main class="catalog" aria-label="project catalog">
+    <div class="projects" id="projects"></div>
+  </main>
 </body>
 </html>

@@ -1,11 +1,18 @@
 # garbage-time-web
 
-Static landing page for garbage-time mini apps.
+Static catalog page for garbage-time mini apps.
 
-## files
+## dev
 
-- `index.html` — main page
-- `styles.css` — all styling
-- `public/` — images, fonts
+```bash
+python3 -m http.server 8000
+```
 
-No build step needed. Just serve the folder.
+Opens at `http://localhost:8000`
+
+## structure
+
+- `index.html` - main page
+- `styles.css` - styling
+- `projects.js` - catalog entries
+- `public/` - images and fonts
